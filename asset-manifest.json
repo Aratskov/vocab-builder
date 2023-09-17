@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vocab-builder/static/css/main.cabb3925.css",
+    "main.js": "/vocab-builder/static/js/main.0c2b5127.js",
+    "static/media/illustration.png": "/vocab-builder/static/media/illustration.a3552a7e4c3836f7e385.png",
+    "index.html": "/vocab-builder/index.html",
+    "static/media/logo.svg": "/vocab-builder/static/media/logo.41c8756016fe6ae8f2a6a4a894799c2f.svg",
+    "main.cabb3925.css.map": "/vocab-builder/static/css/main.cabb3925.css.map",
+    "main.0c2b5127.js.map": "/vocab-builder/static/js/main.0c2b5127.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cabb3925.css",
+    "static/js/main.0c2b5127.js"
+  ]
+}
