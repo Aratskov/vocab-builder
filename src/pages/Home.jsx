@@ -1,7 +1,11 @@
-import { AuthForm } from "components/AuthForm/AuthForm"
+import { AuthForm } from 'components/AuthForm/AuthForm';
+import { ImageHome } from 'components/ImageHome/ImageHome';
 
 export const Home = () => {
-    return (
-    <AuthForm/>
-        )
-}
+  return (
+    <>
+      <ImageHome />
+      <AuthForm />
+    </>
+  );
+};
