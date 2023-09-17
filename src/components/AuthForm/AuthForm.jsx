@@ -1,9 +1,9 @@
 import { useFormik } from 'formik';
-import {
-  validationSchemaLogin,
-  validationSchemaRegister,
-} from '../SchemaValidation/SchemaValidation';
-import { useNavigate } from 'react-router-dom';
+// import {
+//   validationSchemaLogin,
+//   validationSchemaRegister,
+// } from '../SchemaValidation/SchemaValidation';
+// import { useNavigate } from 'react-router-dom';
 import {
   Modal,
   Title,
@@ -12,19 +12,19 @@ import {
   Input,
   Button,
   TextError,
-  ToggleBtn,
+//   ToggleBtn,
   ContainerModal,
   SecondButton,
 } from './AuthForm.styled';
 // import Icon from '../../assets/icons/close.svg';
 // import { loginUser, registerUser } from '../../redux/auth/authOperation';
 // import { useDispatch } from 'react-redux';
-import { useState } from 'react';
+// import { useState } from 'react';
 // import icons from '../../assets/icons/password.svg';
 
 export const AuthForm = ({ isRegister }) => {
 //   const dispatch = useDispatch();
-  const [showPassword, setShowPassword] = useState(false);
+//   const [showPassword, setShowPassword] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -40,9 +40,9 @@ export const AuthForm = ({ isRegister }) => {
     // },
   });
 
-  const togglePassword = () => {
-    setShowPassword(!showPassword);
-  };
+//   const togglePassword = () => {
+//     setShowPassword(!showPassword);
+//   };
 
   return (
     
@@ -89,7 +89,7 @@ export const AuthForm = ({ isRegister }) => {
               <Input
                 id="password"
                 name="password"
-                type={showPassword ? 'text' : 'password'}
+                // type={showPassword ? 'text' : 'password'}
                 onChange={formik.handleChange}
                 value={formik.values.password}
                 placeholder="Password"
