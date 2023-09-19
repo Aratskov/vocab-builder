@@ -1,13 +1,16 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Modal = styled.div`
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   left: 0;
+  bottom: 0;
 
   box-sizing: border-box;
   width: 100%;
   padding: 32px 16px;
+
+  margin-top: 8px;
 
   border-radius: 25px 25px 0px 0px;
   background: rgba(133, 170, 159, 0.1);
@@ -91,12 +94,10 @@ export const Button = styled.button`
   }
 `;
 
-export const SecondButton = styled.button`
-  width: 100%;
+export const SecondButton = styled(Link)`
+  display: block;
   margin-top: 16px;
-  background-color: transparent;
-  border: none;
-  outline: none;
+  text-align: center;
 
   color: rgba(18, 20, 23, 0.5);
   font-weight: 700;

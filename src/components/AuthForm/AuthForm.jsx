@@ -12,7 +12,7 @@ import {
   Input,
   Button,
   TextError,
-//   ToggleBtn,
+  //   ToggleBtn,
   ContainerModal,
   SecondButton,
 } from './AuthForm.styled';
@@ -23,8 +23,8 @@ import {
 // import icons from '../../assets/icons/password.svg';
 
 export const AuthForm = ({ isRegister }) => {
-//   const dispatch = useDispatch();
-//   const [showPassword, setShowPassword] = useState(false);
+  //   const dispatch = useDispatch();
+  //   const [showPassword, setShowPassword] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -40,15 +40,14 @@ export const AuthForm = ({ isRegister }) => {
     // },
   });
 
-//   const togglePassword = () => {
-//     setShowPassword(!showPassword);
-//   };
+  //   const togglePassword = () => {
+  //     setShowPassword(!showPassword);
+  //   };
 
   return (
-    
-      <Modal>
-          <ContainerModal>
-              <Title>{isRegister ? 'Register' : 'Login'}</Title>
+    <Modal>
+      <ContainerModal>
+        <Title>{isRegister ? 'Register' : 'Login'}</Title>
         <SecondText>
           {isRegister
             ? 'To start using our services, please fill out the registration form below. All fields are mandatory:'
@@ -107,11 +106,12 @@ export const AuthForm = ({ isRegister }) => {
               )}
             </label>
           </Form>
-                  <Button type="submit">{isRegister ? 'Register' : 'Login'} </Button>
-          <SecondButton type="submit">{isRegister ? 'Login' : 'Register'} </SecondButton>
-                  
+          <Button type="submit">{isRegister ? 'Register' : 'Login'} </Button>
+          <SecondButton to={isRegister ? '/login' : '/register'}>
+            {isRegister ? 'Login' : 'Register'}{' '}
+          </SecondButton>
         </form>
-        </ContainerModal>
-      </Modal>
+      </ContainerModal>
+    </Modal>
   );
 };
